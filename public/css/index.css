@@ -8,3 +8,19 @@ and open the template in the editor.
     Author     : Douglas Mariz
 */
 
+header#topo {
+    background: url('/imagens/bg-topo.jpg') repeat-x;
+    height: auto;
+}
+
+img {
+    position: relative;
+    max-width: none;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 90px;
+    margin-left: 100px;
+    background-attachment: fixed;
+}
+
