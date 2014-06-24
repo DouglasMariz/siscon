@@ -11,14 +11,20 @@ class Externo_Form_AcessoForm extends Zend_Form
     public function formAcesso() {
         $this->setAction('interno')
         ->setMethod('POST');
-        $this->addAttribs(array('id' => 'login'));
-//        $form = new Zend_Form_Element_Password('pass', array('label' => 'Senha: '));
-        $this->addElement('text', 'usuario', array('label' => 'Usuário: '));
-        $this->addElement('password', 'senha', array('label' => 'Senha: '));
-        $this->addElement('submit', 'entrar', array('label' => 'Entrar'));
         
-//        $form->setRequired(true);
-//        $this->addElement($form);
+        $this->addDisplayGroup(array(
+            $this->createElement('text', 'usuario')
+                    ->setLabel('Usuário')
+                    ->setRequired(true)
+                    ->setAttrib('required', true),
+            $this->createElement('password', 'senha')
+                    ->setLabel('Senha: ')
+                    ->setRequired(true)
+                    ->setAttrib('required', true),
+            $this->createElement('submit', 'entrar')
+            ->setLabel('Entrar')
+                ), 'login'
+            );
         return $this;
     }
 }
