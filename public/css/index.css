@@ -70,6 +70,6 @@ div.container h4 {
     color: #003bb3;
 }
 
-form#login {
-        margin-top: -300px;
+fieldset {
+        margin-top: -325px;
 }
