@@ -9,3 +9,6 @@
 set_include_path(get_include_path(). PATH_SEPARATOR . realpath('..\library\Zend'));
 require_once 'Zend\Loader\Autoloader.php';
 Zend_Loader_Autoloader::getInstance();
+
+//require_once (realpath(dirname(__FILE__) . '\..\autoload.php'));
+//require (__DIR__ . '\..\autoload.php');
