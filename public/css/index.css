@@ -8,19 +8,68 @@ and open the template in the editor.
     Author     : Douglas Mariz
 */
 
-header#topo {
-    background: url('/imagens/bg-topo.jpg') repeat-x;
+html {
+    
+}
+body {
+    background: url('/imagens/bg-tudo-azul.png') repeat-x;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    text-align: center;
+}
+
+.tudo {
+    position: relative;
+    min-height:100%;
+}
+
+* html #tudo {
+    height: 100%; /* hack para IE6 que trata height como min-height */
+}
+
+div.panel-heading {
+    background: url('/imagens/bg-topo-azul.png')no-repeat;
+    width: 940px;
     height: auto;
+    margin: auto;
+}
+
+div.panel-heading img#topo {
+    margin-left: -470px
+}
+
+div.container {
+    padding-bottom: auto;
+}
+
+div.panel-footer p {
+    margin-top: 40px;
+    width: 100%;
+    height: 0px;    //Mesma Altura do Rodapé 
 }
 
 img {
-    position: relative;
+/*    position: relative;
     max-width: none;
     width: auto;
-    height: auto;
+    height: auto;*/
     margin-top: 15px;
     margin-bottom: 90px;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
     background-attachment: fixed;
 }
 
+div.container h4 {
+    text-decoration: underline;
+    margin-left: -450px;
+    height: 0px;
+    color: #003bb3;
+}
+
+form#login {
+        margin-top: -300px;
+}
