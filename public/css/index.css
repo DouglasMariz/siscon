@@ -65,11 +65,19 @@ img {
 
 div.container h4 {
     text-decoration: underline;
-    margin-left: -450px;
+    margin-left: -330px;
     height: 0px;
     color: #003bb3;
 }
 
 fieldset {
-        margin-top: -325px;
+        margin-top: -300px;
+}
+
+fieldset#fieldset-cadastrar {
+        margin-top: auto;
+}
+
+div#footer h6{
+    margin-top: -74px;
 }
