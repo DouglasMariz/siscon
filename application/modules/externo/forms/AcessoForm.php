@@ -8,8 +8,8 @@ class Externo_Form_AcessoForm extends Zend_Form
         /* Form Elements & Other Definitions Here ... */
     }
     
-    public function formAcesso() {
-        $this->setAction('interno')
+    public function formLogin() {
+        $this->setAction('acesso/login')
         ->setMethod('POST');
         
         $this->addDisplayGroup(array(
@@ -18,7 +18,7 @@ class Externo_Form_AcessoForm extends Zend_Form
                     ->setRequired(true)
                     ->setAttrib('required', true),
             $this->createElement('password', 'senha')
-                    ->setLabel('Senha: ')
+                    ->setLabel('Senha')
                     ->setRequired(true)
                     ->setAttrib('required', true),
             $this->createElement('submit', 'entrar')
