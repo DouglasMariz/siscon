@@ -2,9 +2,16 @@
 
 class Externo_Model_AcessoModel
 {
-    public function acesso() {
+    public function login()
+    {
         $form = new Externo_Form_AcessoForm();
-        return $form->formAcesso();
+        return $form->formLogin();
+    }
+    
+    public function cadastrarForm()
+    {
+        $form = new Externo_Form_CadastrarForm();
+        return $form;
     }
 }
 
