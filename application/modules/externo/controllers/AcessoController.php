@@ -11,8 +11,8 @@ class Externo_AcessoController extends Siscon_Controller_Action_Abstract
     public function indexAction()
     {
         // action body
-        $form = new Externo_Model_AcessoModel();
-        $this->view->form = $form->login();
+        $acessoModel = new Externo_Model_AcessoModel();
+        $this->view->form = $acessoModel->login();
     }
     
     public function postDispatch()
@@ -29,5 +29,6 @@ class Externo_AcessoController extends Siscon_Controller_Action_Abstract
     public function loginAction()
     {
         $usuario = $this->getAllParams();
+        dump($usuario);exit;
     }
 }

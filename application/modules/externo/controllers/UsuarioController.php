@@ -23,8 +23,6 @@ class Externo_UsuarioController extends Siscon_Controller_Action_Abstract
     {
          $dados = $this->_request->getPost();
          $dadosUsuario = new Externo_Model_UsuarioModel();
-         var_dump($dadosUsuario);
-         exit;
          $dadosUsuario->cadastrar($dados);
     }
 }
