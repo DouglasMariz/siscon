@@ -5,7 +5,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     public function _initNamespaces() {
         Zend_Loader_Autoloader::getInstance()->registerNamespace('SISCon');
 //        Zend_Loader_Autoloader::getInstance()->getRegisteredNamespaces();
-        
     }
     
     protected function _initDoctype() {
@@ -40,19 +39,19 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $layout = Zend_Controller_Action_HelperBroker::addHelper(new SISCon_LayoutLoader());
     }
    
-//    protected function _initAutoload()
-//    {
-//        $autoloader = new Zend_Application_Module_Autoloader(array(
-//        'namespace' => 'Externo',
-//        'basePath' => APPLICATION_PATH . '\modules\externo'
-//        ));
-//        
-//        // Iniciando o autoloader para recuperar dados do banco
-//        $loader = Zend_Loader_Autoloader::getInstance();
-//        $loader->setFallbackAutoloader(true);
-//
-//        return $autoloader;
-//    }
+    protected function _initAutoload()
+    {
+        $autoloader = new Zend_Application_Module_Autoloader(array(
+        'namespace' => 'Externo',
+        'basePath' => APPLICATION_PATH . '\modules\externo'
+        ));
+
+        // Iniciando o autoloader para recuperar dados do banco
+        $loader = Zend_Loader_Autoloader::getInstance();
+        $loader->setFallbackAutoloader(true);
+
+        return $autoloader;
+    }
     
     protected function _initDB()
     {
