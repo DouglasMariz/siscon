@@ -4,20 +4,77 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fd6889f2ef04645736a2dbab824ede5a",
+    "hash": "9daf925169ea4d48b02c2d9c06d7fac3",
     "packages": [
         {
-            "name": "zendframework/zendframework1",
-            "version": "dev-master",
+            "name": "symfony/var-dumper",
+            "version": "2.7.x-dev",
+            "target-dir": "Symfony/Component/VarDumper",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zendframework/zf1.git",
-                "reference": "6193b1d3851001bed32a8d38fe2f51e3c3fc0b41"
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "32d9d37b10996006df9e298e05aee59dc53742af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf1/zipball/6193b1d3851001bed32a8d38fe2f51e3c3fc0b41",
-                "reference": "6193b1d3851001bed32a8d38fe2f51e3c3fc0b41",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/32d9d37b10996006df9e298e05aee59dc53742af",
+                "reference": "32d9d37b10996006df9e298e05aee59dc53742af",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-0": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2015-02-05 06:58:17"
+        },
+        {
+            "name": "zendframework/zendframework1",
+            "version": "1.12.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zf1.git",
+                "reference": "585b480907421b1ce734945487e7c5fc79d235f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zf1/zipball/585b480907421b1ce734945487e7c5fc79d235f4",
+                "reference": "585b480907421b1ce734945487e7c5fc79d235f4",
                 "shasum": ""
             },
             "require": {
@@ -51,24 +108,43 @@
                 "ZF1",
                 "framework"
             ],
-            "time": "2014-07-24 10:47:11"
+            "time": "2015-02-11 15:08:45"
+        },
+        {
+            "name": "zf1-autoloaders/zf1-autoloaders",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leviferreira/zf1-autoloaders.git",
+                "reference": "e54f153aa4ec27535f8f2e71c94b956bc1b8a944"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leviferreira/zf1-autoloaders/zipball/e54f153aa4ec27535f8f2e71c94b956bc1b8a944",
+                "reference": "e54f153aa4ec27535f8f2e71c94b956bc1b8a944",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "marcinwol",
+                    "email": "none@none.com"
+                }
+            ],
+            "description": "ZF Autoloaders",
+            "time": "2013-09-05 20:49:30"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "zendframework/zendframework1": 20
+        "zf1-autoloaders/zf1-autoloaders": 20,
+        "symfony/var-dumper": 20
     },
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }

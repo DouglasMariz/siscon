@@ -1,17 +1,103 @@
 [
     {
-        "name": "zendframework/zendframework1",
+        "name": "zf1-autoloaders/zf1-autoloaders",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/zendframework/zf1.git",
-            "reference": "6193b1d3851001bed32a8d38fe2f51e3c3fc0b41"
+            "url": "https://github.com/leviferreira/zf1-autoloaders.git",
+            "reference": "e54f153aa4ec27535f8f2e71c94b956bc1b8a944"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zf1/zipball/6193b1d3851001bed32a8d38fe2f51e3c3fc0b41",
-            "reference": "6193b1d3851001bed32a8d38fe2f51e3c3fc0b41",
+            "url": "https://api.github.com/repos/leviferreira/zf1-autoloaders/zipball/e54f153aa4ec27535f8f2e71c94b956bc1b8a944",
+            "reference": "e54f153aa4ec27535f8f2e71c94b956bc1b8a944",
+            "shasum": ""
+        },
+        "time": "2013-09-05 20:49:30",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "marcinwol",
+                "email": "none@none.com"
+            }
+        ],
+        "description": "ZF Autoloaders"
+    },
+    {
+        "name": "symfony/var-dumper",
+        "version": "2.7.x-dev",
+        "version_normalized": "2.7.9999999.9999999-dev",
+        "target-dir": "Symfony/Component/VarDumper",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "32d9d37b10996006df9e298e05aee59dc53742af"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/32d9d37b10996006df9e298e05aee59dc53742af",
+            "reference": "32d9d37b10996006df9e298e05aee59dc53742af",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "suggest": {
+            "ext-symfony_debug": ""
+        },
+        "time": "2015-02-05 06:58:17",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "Resources/functions/dump.php"
+            ],
+            "psr-0": {
+                "Symfony\\Component\\VarDumper\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            }
+        ],
+        "description": "Symfony mechanism for exploring and dumping PHP variables",
+        "homepage": "http://symfony.com",
+        "keywords": [
+            "debug",
+            "dump"
+        ]
+    },
+    {
+        "name": "zendframework/zendframework1",
+        "version": "1.12.11",
+        "version_normalized": "1.12.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zf1.git",
+            "reference": "585b480907421b1ce734945487e7c5fc79d235f4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zf1/zipball/585b480907421b1ce734945487e7c5fc79d235f4",
+            "reference": "585b480907421b1ce734945487e7c5fc79d235f4",
             "shasum": ""
         },
         "require": {
@@ -21,14 +107,14 @@
             "phpunit/dbunit": "1.3.*",
             "phpunit/phpunit": "3.7.*"
         },
-        "time": "2014-07-24 10:47:11",
+        "time": "2015-02-11 15:08:45",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "1.12.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Zend_": "library/"
