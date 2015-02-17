@@ -1,11 +1,19 @@
 {
-    "name": "Douglas Mariz",
-    
+    "name": "Douglas Mariz/sis-con",
+    "authors": [
+        {
+            "name": "Douglas Mariz",
+            "email": "douglasviviane@gmail.com"
+        }
+    ],
+
     "autoload": {
         "psr-0": {"": "src/"}
     },
-    
+
     "require": {
-        "zendframework/zendframework1": "1.12.*@dev"
+        "zendframework/zendframework1": "1.*",
+        "zf1-autoloaders/zf1-autoloaders": "dev-master",
+        "symfony/var-dumper": "2.7.x-dev"
     }
 }
