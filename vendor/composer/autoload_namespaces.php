@@ -8,5 +8,4 @@ $baseDir = dirname($vendorDir);
 return array(
     'Zend_' => array($vendorDir . '/zendframework/zendframework1/library'),
     'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
-    '' => array($baseDir . '/src'),
 );
