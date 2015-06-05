@@ -1,6 +1,6 @@
 <?php
 
-class Externo_UsuarioController extends Siscon_Controller_Action_Abstract
+class Siscon_UsuarioController extends Siscon_Controller_Action_Abstract
 {
 
     public function init()
@@ -15,14 +15,14 @@ class Externo_UsuarioController extends Siscon_Controller_Action_Abstract
     
     public function cadastrarFormAction()
     {
-        $form = new Externo_Model_AcessoModel();
+        $form = new Siscon_Model_AcessoModel();
         $this->view->form = $form->cadastrarForm();
     }
     
      public function cadastrarAction()
     {
          $dados = $this->_request->getPost();
-         $dadosUsuario = new Externo_Model_UsuarioModel();
+         $dadosUsuario = new Siscon_Model_UsuarioModel();
          $dadosUsuario->cadastrar($dados);
     }
 }

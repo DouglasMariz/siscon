@@ -3,7 +3,7 @@
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
     public function _initNamespaces() {
-        Zend_Loader_Autoloader::getInstance()->registerNamespace('SISCon');
+        Zend_Loader_Autoloader::getInstance()->registerNamespace('Siscon');
 //        Zend_Loader_Autoloader::getInstance()->getRegisteredNamespaces();
     }
     
@@ -30,20 +30,20 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->doctype('XHTML1_STRICT');
         $view->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
         $view->headTitle()->setSeparator(' - ');
-        $view->headTitle('SISCon');
+        $view->headTitle('Siscon');
     }
    
     protected function _initLayoutHelper()
     {
         $this->bootstrap('frontController');
-        $layout = Zend_Controller_Action_HelperBroker::addHelper(new SISCon_LayoutLoader());
+        $layout = Zend_Controller_Action_HelperBroker::addHelper(new Siscon_LayoutLoader());
     }
    
     protected function _initAutoload()
     {
         $autoloader = new Zend_Application_Module_Autoloader(array(
-        'namespace' => 'Externo',
-        'basePath' => APPLICATION_PATH . '\modules\externo'
+        'namespace' => 'Siscon',
+        'basePath' => APPLICATION_PATH . '/modules/Siscon'
         ));
 
         // Iniciando o autoloader para recuperar dados do banco
@@ -87,5 +87,10 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 //            $profiler->setEnabled(true);
 //            $dbAdapter->setProfiler($profiler);
 //        }
+    }
+
+    public function _initInclude()
+    {
+
     }
 }

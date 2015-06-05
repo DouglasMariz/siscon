@@ -1,16 +1,16 @@
 <?php
 
-class Externo_Model_AcessoModel
+class Siscon_Model_AcessoModel
 {
     public function login()
     {
-        $acessoForm = new Externo_Form_AcessoForm();
+        $acessoForm = new Siscon_Form_AcessoForm();
         return $acessoForm->formLogin();
     }
     
     public function cadastrarForm()
     {
-        $form = new Externo_Form_CadastrarForm();
+        $form = new Siscon_Form_CadastrarForm();
         return $form;
     }
 }

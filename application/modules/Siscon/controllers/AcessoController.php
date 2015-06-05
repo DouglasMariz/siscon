@@ -1,6 +1,7 @@
 <?php
 
-class Externo_AcessoController extends Siscon_Controller_Action_Abstract
+
+class Siscon_AcessoController extends Siscon_Controller_Action_Abstract
 {
 
     public function init()
@@ -11,7 +12,9 @@ class Externo_AcessoController extends Siscon_Controller_Action_Abstract
     public function indexAction()
     {
         // action body
-        $acessoModel = new Externo_Model_AcessoModel();
+//        $testeDto = new Siscon_testeDto();
+//        dump($testeDto);exit
+        $acessoModel = new Siscon_Model_AcessoModel();
         $this->view->form = $acessoModel->login();
     }
     
@@ -23,7 +26,7 @@ class Externo_AcessoController extends Siscon_Controller_Action_Abstract
     
     public function recuperarSenhaAction()
     {
-        
+        $dados = $this->getRequest()->getParams();
     }
     
     public function loginAction()

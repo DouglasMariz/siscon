@@ -1,5 +1,5 @@
 {
-    "name": "Douglas Mariz/sis-con",
+    "name": "Douglas Mariz/Siscon",
     "authors": [
         {
             "name": "Douglas Mariz",
@@ -8,7 +8,10 @@
     ],
 
     "autoload": {
-        "psr-0": {"": "src/"}
+        "psr-0": {
+            "Siscon": "application/modules",
+            "traits": "./application"
+        }
     },
 
     "require": {

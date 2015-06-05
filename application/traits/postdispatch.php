@@ -13,10 +13,10 @@
 //	$acao = 'pre-login';
 //	$nomeDoLink = 'Acessar';
 //}
-$urlIndex = $this->getUrl('index', 'acesso', 'externo');
-$urlCadastrarForm = $this->getUrl('cadastrar-form', 'usuario', 'externo');
-$urlRecuperarSenha = $this->getUrl('recuperar-senha', 'acesso', 'externo');
-$login = $this->getUrl('login', 'acesso', 'externo');
+$urlIndex = $this->getUrl('index', 'acesso', 'Siscon');
+$urlCadastrarForm = $this->getUrl('cadastrar-form', 'usuario', 'Siscon');
+$urlRecuperarSenha = $this->getUrl('recuperar-senha', 'acesso', 'Siscon');
+$login = $this->getUrl('login', 'acesso', 'Siscon');
 
 $this->view->assign('urlIndex', $urlIndex);
 $this->view->assign('urlCadastrarForm', $urlCadastrarForm);

@@ -1,6 +1,6 @@
 <?php
 
-class Externo_IndexController extends Zend_Controller_Action
+class Siscon_IndexController extends Zend_Controller_Action
 {
 
     public function init()

@@ -1,6 +1,6 @@
 <?php
 
-class Externo_Form_AcessoForm extends Zend_Form
+class Siscon_Form_AcessoForm extends Zend_Form
 {
 
     public function init()
