@@ -8,5 +8,3 @@ RewriteRule ^.*$ - [NC,L]
 RewriteRule ^.*$ index.php [NC,L]
 
 php_value include_path ".;C:\Program Files (x86)\ZendFramework\library
-
-Redirect /paginavelha.html http://siscon.github.io/public/index.php
