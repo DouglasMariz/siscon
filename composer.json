@@ -1,22 +1,26 @@
 {
-    "name": "Douglas Mariz/Siscon",
-    "authors": [
-        {
-            "name": "Douglas Mariz",
-            "email": "douglasviviane@gmail.com"
-        }
-    ],
-
-    "autoload": {
-        "psr-0": {
-            "Siscon": "application/modules",
-            "traits": "./application"
-        }
-    },
-
-    "require": {
-        "zendframework/zendframework1": "1.*",
-        "zf1-autoloaders/zf1-autoloaders": "dev-master",
-        "symfony/var-dumper": "2.7.x-dev"
+  "name": "Douglas Mariz/Siscon",
+  "authors": [
+    {
+      "name": "Douglas Mariz",
+      "email": "douglasviviane@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Siscon": "application/modules",
+      "traits": "./application"
+    }
+  },
+  "autoload": {
+    "classmap": [
+      "application/modules",
+      "library/Siscon"
+    ]
+  },
+  "require": {
+    "zendframework/zendframework1": "1.*",
+    "zf1-autoloaders/zf1-autoloaders": "dev-master",
+    "symfony/var-dumper": "2.7.x-dev"
+  }
 }
