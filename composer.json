@@ -10,9 +10,7 @@
     "psr-0": {
       "Siscon": "application/modules",
       "traits": "./application"
-    }
-  },
-  "autoload": {
+    },
     "classmap": [
       "application/modules",
       "library/Siscon"
